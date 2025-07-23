@@ -1,0 +1,7 @@
+vim.api.nvim_set_hl(0, "NeoTreeNormal", { bg = "none", fg = "#C8D3F5" })
+vim.api.nvim_set_hl(0, "NeoTreeNormalNC", { bg = "none", fg = "#C8D3F5" })
+vim.api.nvim_set_hl(0, "NeoTreeDirectoryIcon", { fg = "#82AAFF" })
+vim.api.nvim_set_hl(0, "NeoTreeDirectoryName", { fg = "#82AAFF" })
+vim.api.nvim_set_hl(0, "NeoTreeFileName", { fg = "#C8D3F5" })
+vim.api.nvim_set_hl(0, "NeoTreeFileNameOpened", { fg = "#FFCB6B" })
+vim.api.nvim_set_hl(0, "NeoTreeFileNameModified", { fg = "#F07178" })
