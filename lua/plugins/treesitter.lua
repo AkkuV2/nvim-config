@@ -1,11 +1,29 @@
--- nvim-treesitter (resaltado de sintaxis mejorado)
 return {
   "nvim-treesitter/nvim-treesitter",
-  build = ":TSUpdate",
-  config = function()
-    require("nvim-treesitter.configs").setup({
-      ensure_installed = { "html", "css", "javascript" },
-      highlight = { enable = true },
-    })
+  opts = function()
+    return {
+      highlight = {
+        enable = true,
+      },
+      indent = {
+        enable = true,
+      },
+      ensure_installed = {
+        "lua",
+        "vim",
+        "java",
+        "html",
+        "css",
+        "tsx",
+        "javascript",
+        "json",
+        "python",
+        "php",
+      },
+      auto_install = true,
+    }
+  end,
+  config = function(_, opts)
+    require("nvim-treesitter.configs").setup(opts)
   end,
 }
